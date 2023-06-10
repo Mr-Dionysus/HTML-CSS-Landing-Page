@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    font-family: Roboto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    padding: 10px;
+}
+
+li:last-child {
+    padding-right: 0px;
+}
+
+.first-half {
+    background: #023047;
+    color: white;
+}
+
+.first-half div {
+    margin: 0px 150px;
+}
+
+.under-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.under-header-sign-up {
+    width: 300px;
+}
+
+.under-header-sign-up h1 {
+    font-size: 2.2em;
+    line-height: 1;
+    padding-bottom: 10px;
+}
+
+.under-header-sign-up p {
+    font-size: 14px;
+}
+
+.under-header-sign-up button {
+    margin-top: 10px;
+    background: #3a86ff;
+    color: white;
+    padding: 5px 20px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.under-header-img {
+    object-fit: cover;
+    object-position: 100% 50%;
+    height: 150px;
+    width: 350px;
+}
+
+.random-info {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+h2 {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.random-info img {
+    height: 120px;
+    width: 120px;
+    border: 3px #3a86ff solid;
+    border-radius: 10px;
+    object-fit: cover;
+    background-position: 100% 50%;
+}
+
+.random-info p {
+    font-size: 0.8em;
+    width: 120px;
+    color: #023e8a;
+    text-align: center;
+}
+
+.review-bg {
+    background: #e5e5e5;
+}
+
+.review {
+    width: 600px;
+    margin: auto;
+    padding: 80px;
+}
+
+.review p {
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.review span {
+    font-weight: bold;
+    float: right;
+}
+
+.call-to-action-box {
+    color: white;
+    display: flex;
+    margin: 70px auto;
+    width: 600px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 80px;
+    background: #3a86ff;
+    border-radius: 10px;
+}
+
+.call-to-action-box h3 {
+    font-size: 1em;
+}
+
+.call-to-action-box p {
+    padding-top: 5px;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.call-to-action-box button {
+    color: white;
+    background: #3a86ff;
+    border: 2px white solid;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+footer {
+    background: #023047;
+    color: white;
+    font-size: 0.8em;
+    padding: 25px;
+    font-weight: 300;
+    text-align: center;
+}
