@@ -4,12 +4,20 @@
 }
 
 header {
+    max-width: 800px;
+    padding: 10px 0px 30px 0px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 80px;
-    max-width: 800px;
-    margin: auto;
+}
+
+svg {
+    height: 40px;
+    width: 40px;
+    padding: 3px;
+    background: #ef233bcd;
+    border-radius: 25px;
 }
 
 h1 {
@@ -17,21 +25,43 @@ h1 {
 }
 
 ul {
-    list-style: none;
     display: flex;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 li {
     padding: 10px;
+    color: white;
+    text-decoration: rgb(0, 0, 0, 0);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.3s;
 }
 
 li:last-child {
     padding-right: 0px;
 }
 
+li:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+img {
+    border-radius: 25px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 25px;
+}
+
 .first-half {
-    background: #023047;
     color: white;
+    background: #023047;
 }
 
 .first-half div {
@@ -39,69 +69,75 @@ li:last-child {
 }
 
 .under-header {
+    max-width: 800px;
+    padding-bottom: 80px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 100px;
-    max-width: 800px;
-    margin: auto;
+    align-items: center;
 }
 
 .under-header-sign-up {
-    width: 300px;
-}
-
-.under-header-sign-up h1 {
-    font-size: 2.2em;
-    line-height: 1;
-    padding-bottom: 10px;
-}
-
-.under-header-sign-up p {
-    font-size: 14px;
-}
-
-.under-header-sign-up button {
-    margin-top: 10px;
-    background: #3a86ff;
-    color: white;
-    padding: 5px 20px;
-    border: 0;
-    border-radius: 10px;
-}
-
-.under-header-img {
-    object-fit: cover;
-    object-position: 100% 50%;
-    height: 150px;
     width: 350px;
 }
 
+.under-header-sign-up h1 {
+    font-size: 1.8em;
+    line-height: 1;
+}
+
+.under-header-sign-up p {
+    margin: 15px 0px;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.754);
+}
+
+.under-header-sign-up button {
+    padding: 10px 25px;
+    border: none;
+    font-size: 1em;
+    color: white;
+    background: #3a86ff;
+    transition: background 0.3s;
+}
+
+.under-header-sign-up button:hover {
+    background: #3a85ff6f;
+}
+
+.under-header-img {
+    height: 200px;
+    width: 350px;
+    object-fit: cover;
+    object-position: 100% 50%;
+}
+
 .random-info {
+    width: 800px;
+    padding-bottom: 80px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    width: 600px;
-    margin: auto;
-    padding-bottom: 80px;
 }
 
 h2 {
-    text-align: center;
     padding: 30px 0px;
+    text-align: center;
 }
 
 .random-info img {
-    height: 120px;
-    width: 120px;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 5px;
     border: 3px #3a86ff solid;
-    border-radius: 10px;
     object-fit: cover;
     background-position: 100% 50%;
 }
 
 .random-info p {
-    font-size: 0.8em;
-    width: 120px;
-    color: #023e8a;
+    width: 150px;
+    color: #0353bb;
+    font-size: 0.9em;
     text-align: center;
 }
 
@@ -111,58 +147,63 @@ h2 {
 
 .review {
     width: 600px;
-    margin: auto;
     padding: 80px;
+    margin: auto;
 }
 
 .review p {
+    margin-bottom: 10px;
     font-size: 1.5em;
     font-style: italic;
     font-weight: 300;
 }
 
 .review span {
-    font-weight: bold;
     float: right;
+    font-weight: bold;
 }
 
 .call-to-action-box {
-    color: white;
-    display: flex;
-    margin: 70px auto;
     width: 600px;
+    padding: 35px 80px;
+    margin: 70px auto;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 80px;
+    color: white;
     background: #3a86ff;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 
 .call-to-action-box h3 {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .call-to-action-box p {
     padding-top: 5px;
-    font-size: 0.8em;
-    font-weight: 300;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.684);
 }
 
 .call-to-action-box button {
+    padding: 10px 30px;
     color: white;
     background: #3a86ff;
     border: 2px white solid;
-    border-radius: 15px;
-    padding: 10px 30px;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.call-to-action-box button:hover {
+    background: rgba(255, 255, 255, 0.271);
 }
 
 footer {
-    background: #023047;
+    padding: 10px;
     color: white;
+    background: #023047;
     font-size: 0.8em;
-    padding: 25px;
     font-weight: 300;
     text-align: center;
 }
