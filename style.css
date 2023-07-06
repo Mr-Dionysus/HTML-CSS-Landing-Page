@@ -117,6 +117,7 @@ button {
     padding-bottom: 80px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -206,4 +207,107 @@ footer {
     font-size: 0.8em;
     font-weight: 300;
     text-align: center;
+}
+
+@media (max-width: 917px) {
+    svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    li {
+        font-size: 0.7em;
+    }
+
+    .under-header-sign-up {
+        width: 200px;
+    }
+
+    .under-header-sign-up button {
+        padding: 8px 12px;
+        font-size: 0.7em;
+    }
+
+    .first-half div {
+        margin: 0px 50px;
+    }
+
+    .first-half h1 {
+        font-size: 1em;
+    }
+
+    .first-half p {
+        font-size: 0.6em;
+    }
+
+    .first-half img {
+        height: 150px;
+        width: 200px;
+    }
+
+    .random-info {
+        width: 80%;
+    }
+
+    .random-info img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .random-info p {
+        width: 100px;
+        font-size: 0.8em;
+        margin-bottom: 5px;
+    }
+
+    .review {
+        width: 80%;
+        padding: 10%;
+    }
+
+    .review p {
+        font-size: 0.8em;
+    }
+
+    .review span {
+        font-size: 0.8em;
+    }
+
+    .call-to-action-box {
+        height: 100px;
+        width: 90%;
+        padding: 10px;
+        justify-content: space-around;
+    }
+
+    .call-to-action-box h3 {
+        font-size: 0.9em;
+    }
+
+    .call-to-action-box p {
+        font-size: 0.8em;
+    }
+
+    .call-to-action-box button {
+        font-size: 0.8em;
+        padding: 5px 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .first-half img {
+        height: 100px;
+        width: 150px;
+    }
+
+    .random-info {
+        width: 50%;
+    }
+}
+
+@media (max-width: 476px) {
+    .random-info {
+        width: 30%;
+        justify-content: center;
+    }
 }
